@@ -1,2 +1,3 @@
-# goit-markup-hw-03
-homework-3
+# goit-markup-hw-02
+homework 2
+Homework exactly according to the homework technical task
