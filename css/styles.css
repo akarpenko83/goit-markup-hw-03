@@ -96,14 +96,14 @@ ul {
 
 /* --------------- header ------------------ */
 .header {
-  display: flex;
   height: 80px;
   border-bottom: 1px solid #ececec;
 }
+.container.header {
+  display: flex;
+  align-items: center;
+}
 .logo {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 24px 0px 25px;
   margin-right: 93px;
   color: var(--logo-primary-color);
   font-family: 'Raleway', sans-serif;
@@ -114,13 +114,8 @@ ul {
 .logo .accent {
   color: var(--accent-color);
 }
-.site-nav {
-  display: inline-block;
-  vertical-align: middle;
-}
 .header-nav {
   display: flex;
-  margin-right: 344px;
 }
 .header-nav > .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -135,13 +130,9 @@ ul {
 .header-nav .link:focus {
   color: var(--accent-color);
 }
-.contacts-header {
-  display: inline-flex;
-  align-items: flex-end;
-}
 .contacts.list {
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 .contacts.list > .contacts-item:not(:last-child) {
   margin-right: 50px;
