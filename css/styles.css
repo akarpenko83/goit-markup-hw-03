@@ -2,6 +2,7 @@
     вторичный цвет (заголовки) #212121
     цвет акцента #2196f3 */
 :root {
+  --card-set-gap: 30px;
   --logo-primary-color: #000000;
   --logo-secondaty-color: #ffffff;
   --text-primary-color: #757575;
@@ -303,15 +304,17 @@ img {
   display: flex;
   /* justify-content: center; */
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
   /* gap: 30px; */
 }
 .portf-list > .portf-item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(
+    100% / 3 - var(--card-set-gap)
+  );
   outline: 1px solid #eeeeee;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
 .portf-item-descr {
   padding: 20px 24px;
