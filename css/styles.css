@@ -38,6 +38,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ------------------utilitary classes--------------------- */
 .outline {
   outline: 2px solid tomato;
@@ -93,8 +98,7 @@ ul {
   white-space: nowrap;
   overflow: hidden;
 }
-img {display: block, max-width: 100%, height: auto
-}
+
 /* --------------- header ------------------ */
 .header {
   border-bottom: 1px solid #ececec;
@@ -265,14 +269,12 @@ img {display: block, max-width: 100%, height: auto
 /* ----------------------------page --PORTFOLIO-- */
 /* section PORTFOLIO */
 .portfolio .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 94px;
 }
 /* -- portfolio filter buttons area -- */
 .btn-list {
   display: flex;
+  justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
 }
@@ -296,15 +298,20 @@ img {display: block, max-width: 100%, height: auto
   background-color: var(--accent-color);
 }
 /* -- portolio content area -- */
+
 .portf-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
-  gap: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
+  /* gap: 30px; */
 }
 .portf-list > .portf-item {
-  /* flex-basis: calc((100% - 2 * 40px) / 3); */
-  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
+  outline: 1px solid #eeeeee;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .portf-item-descr {
   padding: 20px 24px;
