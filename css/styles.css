@@ -30,6 +30,7 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -258,7 +259,7 @@ img {
   padding: 30px 0;
 }
 .team.subtitle {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   text-align: center;
   font-weight: 500;
 }
@@ -302,11 +303,9 @@ img {
 
 .portf-list {
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  /* gap: 30px; */
 }
 .portf-list > .portf-item {
   flex-basis: calc(

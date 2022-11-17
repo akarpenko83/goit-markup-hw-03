@@ -26,7 +26,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.com/libraries/modern-normalize"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css"
+      integrity="sha512-l0ofWk9slhBYzFo/8jFXBHNcPIZ4CekhhC4mtj9EZ47ed+Gdt4txfOF2+VAH/YdxFFf1ODtTuaGXZR6ygHsa7w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -81,9 +84,6 @@
 
       <section class="section portfolio">
         <div class="container">
-          <h1 class="visually-hidden">
-            Портфоліо
-          </h1>
           <h2 class="visually-hidden">Фільтри</h2>
           <div class="fltr-btn">
             <ul class="btn-list list">
@@ -131,19 +131,23 @@
           </div>
           <ul class="portf-list list">
             <li class="portf-item">
-              <img
-                src="./images/portf-img-1.jpg"
-                alt="ноутбук"
-                width="370"
-              />
-              <div class="div portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Технокряк
-                </h3>
-                <p class="portf-item text">
-                  Веб-сайт
-                </p>
-              </div>
+              <article class="portf-card">
+                <div class="portf-thumb">
+                  <img
+                    src="./images/portf-img-1.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                </div>
+                <div class="portf-item-descr">
+                  <h3 class="portf-item subtitle">
+                    Технокряк
+                  </h3>
+                  <p class="portf-item text">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
 
             <li class="portf-item">
